@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 $(document).ready(function (){
     $('modal').modal();
 });
+=======
+img {
+    max-width: 100%;
+    
+}
+>>>>>>> 0244881c4704704158aae7efbc76d17bd64d62a5
