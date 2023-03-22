@@ -1,8 +1,12 @@
 
 // When I click the search bar, I want to type a word into it
-// After I type out my word I click ENTER or press the "Search" button to search the word
-// Then I am present with the word I searched, the definitions, antonyms and synonyms and an image representing the word
-// The word, definitions, antonyms and synonyms, should all be pulled from https://dictionaryapi.dev/
+    // TODO store search bar class into a variable
+    // TODO set a searchWord variable to an empty string
+    // TODO create an event listener for the a click on our "search" button and run searchFunc
+    /* searchFunc will grab the searched words' definition, antonyms and synonyms along with an example 
+        of it being used in a sentence from the dictionary API*/
+    // searchFunc will also get an image using our searchWord variable as the keyword and display the image onto the page
+
 
 
 // Quote API
