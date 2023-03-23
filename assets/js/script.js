@@ -59,12 +59,3 @@ $.get(`https://api.unsplash.com/search/photos?page=1&query=${keyword}&client_id=
 
 
 
-
-
-
-
-
-
-// button.addEventListener('click', function(){
-
-// });
