@@ -15,12 +15,10 @@ $(document).ready(function(){
 // searchFunc will also get an image using our searchWord variable as the keyword and display the image onto the page
 
 var submitBtn = document.querySelector('#word-submit')
-
-var inputBar = $('#input-bar');
-
+var inputBar = $('#input-bar')
 let homePage = document.querySelector('.home-page')
 let defPage = document.querySelector('.definition-page')
-console.log(this)
+
 submitBtn.addEventListener('click', function(event){
     event.preventDefault();
     var word = "test"  // get actual value from form
