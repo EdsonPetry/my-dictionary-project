@@ -9,52 +9,67 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body id="entire-page" class="bg-gradient-to-r from-blue-400 to-green-100">
+<body id="entire-page" class="bg-gradient-to-r from-blue-400 to-green-100" alt="landing page"
+  alt="sleek picture dictionary web application that lets the user input a word and the app then generates both a definition and an image associated with the word">
   <!-- Landing page -->
-  <div class="home-page">
-    <!-- Centered Title -->
-    <h1 id="header"
-      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-teal-300 md:text-5xl lg:text-6xl dark:text-white text-centered">
-      MyDictionary</h1>
-    <!-- Centered Search bar -->
-    <form id="input-bar">
-      <div class="mb-6 mr-px 25 ml-px 25">
-        <label for="default-search"
-        class="py-3 mb-2 text-sm font-medium text-gray-500 sr-only dark:text-white">Search</label>
-        <div class="relative">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-100" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-          </div>
-          <input type="search" id="default-search"
-          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-teal-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="Search English..." required>
-          <button type="submit" id="word-submit"
-          class="text-white absolute right-2.5 bottom-2.5 bg-teal-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-        </div>
+  <main class="home-page" alt="main section of page,gradient of light blue to light green background">
 
-    </form>
-  </div>
+
+    <h1 id="header"
+      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-teal-300 md:text-5xl lg:text-6xl dark:text-white text-centered"
+      alt="'MyDictionary' on the top left of the screen in bold teal lettering">
+      MyDictionary</h1>
+    <p id="welcome-text" class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-100"
+      alt="'Search.Define.See' in quotations with gray lettering">
+      "Search. Define. See"</p>
     
-  <footer class="footer absolute inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <form id="input-bar">
+        <div class="mb-6 mr-px 25 ml-px 25">
+          <label for="default-search"
+          class="py-3 mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <input type="search" id="default-search"
+            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-teal-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search English..." required>
+            <button type="submit" id="word-submit"
+            class="text-white absolute right-2.5 bottom-2.5 bg-teal-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+          </div>
+        </form>
+      <figure class="max-w-xs opacity-40 max-h-xs">
+        <img src="assets/myDictionary.png">
+      </figure>
+   
+
+    <!-- Wrapped definition page in .invisible class, will be removed/added using JS -->
+
+    <!-- defintion generates here on "enter" -->
+
+    <footer class="footer absolute bottom  inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800"
+      alt="long white footer with publishing info and data as well as a privacy policy">
       <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href=""
-            class="hover:underline">MyDictionary"</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@<a href="" class="hover:underline"
+            alt="gray copyright text">2023 MyDictionaryTeam</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-          <li><a href="#" class="mr-4 hover:underline md:mr-6 ">About</a></li>
-          <li><a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a></li>
-        </ul>
-      </div>
-  </footer>
+            <li>
+            <a href="https://github.com/EdsonPetry/my-dictionary-project" class="mr-4 hover:underline md:mr-6 "
+              alt="about link to the developer's working github repository">Github</a>
+            </li>
+            <li>
+            <a href="https://www.privacypolicies.com/live/f10cde14-9be4-46cd-b2ae-1656242119d9"
+              class="mr-4 hover:underline md:mr-6" alt="privacy policy">Privacy Policy</a>
+          </li>
+    </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.min.js"
-      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
