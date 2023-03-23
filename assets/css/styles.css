@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-$(document).ready(function (){
-    $('modal').modal();
-});
-=======
-img {
-    max-width: 100%;
-    
+.form-control.search {
+    width: 80vx;
+    height: 50px;
 }
->>>>>>> 0244881c4704704158aae7efbc76d17bd64d62a5
