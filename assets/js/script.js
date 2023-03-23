@@ -14,45 +14,32 @@ $(document).ready(function(){
         of it being used in a sentence from the dictionary API*/
 // searchFunc will also get an image using our searchWord variable as the keyword and display the image onto the page
 
-var submitBtn = $('button');
+var submitBtn = document.querySelector('#word-submit')
 
 var inputBar = $('#input-bar');
 
-var defPage = $('.definition-page');
+let homePage = document.querySelector('.home-page')
+let defPage = document.querySelector('.definition-page')
+console.log(this)
+submitBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    var word = "test"  // get actual value from form
+    addWordToLocal(word);
+    searchWord(word)
+})
+function addWordToLocal(wordToAdd) {
 
-var homePage = $('.home-page');
+}
+function retrieveWordFromLocal(){
 
-submitBtn = addEventListener('click', searchWord)
-
-function searchWord() {
-    $(homePage).addClass('hidden')
-    $(defPage).removeClass('hidden')
-    // $(defPage).addClass('visible')
+}
+function searchWord(word) {
+    window.location.href="./otherpage.html?word=" + word
+    // homePage.classList.add('hidden')
+    // defPage.classList.remove('hidden')
 }
 
-// Quote API
-// var category = 'something'
-// $.ajax({
-//     method:'GET',
-//     url: 'https://api.dictionaryapi.dev/api/v2/entries/en/something',
-//     contentType: 'application/json',
-//     success: function(result) {
-//         console.log(result[0].word);
-//     }
-// })
 
-// $.ajax({
-//     method: 'GET',
-//     url: 'https://api.api-ninjas.com/v1/quotes?category=',
-//     headers: { 'X-Api-Key': '/445waBLzIB9gpxRtEBL6w==H1EI9w79nq1cXGWp'},
-//     contentType: 'application/json',
-//     success: function(result) {
-//         console.log(result[0].quote);
-//     },
-//     error: function ajaxError(jqXHR) {
-//         console.error('Error: ', jqXHR.responseText);
-//     }
-// });
 
 // let word = '';
 // let wordUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
