@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('.modal').modal();
+
+    //listen for submit on the search bar (event listener "submit")
+    // when event happens the do $.get(dictionaryBaseUrl + searchTeamFromSearchBar)
+    // then with data put on page
+  });
+
 // When I click the search bar, I want to type a word into it
 // TODO store search bar class into a variable
 // TODO set a searchWord variable to an empty string
@@ -52,3 +60,16 @@ $.get(
         <img src="${image}">
     `);
 });
+
+
+
+
+
+
+
+
+
+
+// button.addEventListener('click', function(){
+
+// });
