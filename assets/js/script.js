@@ -12,7 +12,15 @@ var inputBar = $('#input-bar');
 
 var defPage = $('.definition-page');
 
-var homePage = $('home-page');
+var homePage = $('.home-page');
+
+submitBtn = addEventListener('click', searchWord)
+
+function searchWord() {
+    $(homePage).addClass('hidden')
+    $(defPage).removeClass('hidden')
+    // $(defPage).addClass('visible')
+}
 
 // Quote API
 // var category = 'something'
