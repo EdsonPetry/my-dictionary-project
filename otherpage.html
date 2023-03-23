@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyDictionary</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <header>
+          <h1 id="header"
+          class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-teal-300 md:text-5xl lg:text-6xl dark:text-white">
+          MyDictionary</h1>
+          <!-- Make "Search. Define. See" lighter in order to be more visible -->
+          <p id="welcome-text" class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+          "Search. Define. See"</p>
+        </header>
+        <!-- Add slight margin on main contents of the page -->
+        <main class="flex-row">
+          <form id="input-bar">
+            <div class="mb-6 mr-px 25 ml-px 25">
+              <label for="default-search"
+              class="py-3 mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
+                <input type="search" id="default-search"
+                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-teal-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search English..." required>
+                <button type="submit"
+                class="text-white absolute right-2.5 bottom-2.5 bg-teal-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+              </div>
+    
+          </form>
+        <!-- defintion generates here on "enter" -->
+          <div class="inline-flex w-full py-2  justify-between">
+            <form id="word-output"
+            class="text-m italic flex-wrap inline-flex w-full  justify-between font-semibold text-gray-900 dark:text-white">
+              <p class="flex-row text-white justify-self-start underline">"word here"</p>
+              <img class="justify-self-end text-white flex-row h-auto max-w-full" src="/docs/images/examples/image-1@2x.jpg"
+              alt="image description">
+    
+            </form>
+            <div>
+        </main>
+    
+        <ul class="break-before-auto flex-column space-y-1 align- text-gray-700 text-xsmall" bottom-text>
+          <li>"noun/verb/adjective etc..."</li>
+          <li>"definition"</li>
+          <li>"quote from"</li>
+        </ul>
+      </div>
+</body>
+</html>
