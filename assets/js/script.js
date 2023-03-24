@@ -26,7 +26,7 @@ inputBar.on("submit", function (event) {
 
 // function retrieveWordFromLocal() {}
 
-function searchWord(word) { //MOST IMPORTANT FUNCTION 
+function searchWord(word) { 
   window.location.href = "./otherpage.html?word=" + word;
   getDefiniton(word);
   getImage(word);

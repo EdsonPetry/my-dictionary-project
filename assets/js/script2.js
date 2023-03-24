@@ -1,5 +1,3 @@
-
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const word = urlParams.get('word')
@@ -27,7 +25,7 @@ inputBar.on("submit", function (event) {
 // function retrieveWordFromLocal() {}
 searchWord(word);
 
-function searchWord(word) { //MOST IMPORTANT FUNCTION 
+function searchWord(word) { 
 //   window.location.href = "./otherpage.html?word=" + word;
   getDefiniton(word);
   getImage(word);
