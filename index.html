@@ -50,8 +50,23 @@
     <!-- Wrapped definition page in .invisible class, will be removed/added using JS -->
 
     <!-- defintion generates here on "enter" -->
+    <div id="definition-page" class="inline-flex w-full py-2  justify-between hidden">
+      <form id="word-output"
+      class="text-m italic flex-wrap inline-flex w-full  justify-between font-semibold text-gray-900 dark:text-white">
+        <p class="flex-row text-white justify-self-start underline">"word here"</p>
+        <img class="justify-self-end text-white flex-row h-auto max-w-full" src="/docs/images/examples/image-1@2x.jpg"
+        alt="image description">
 
-    <footer class="footer absolute bottom  inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800"
+      </form>
+      
+  </main>
+
+  <ul class="break-before-auto flex-column space-y-1 align- text-gray-700 text-xsmall hidden" bottom-text>
+    <li id="part-of-speech">"noun/verb/adjective etc..."</li>
+    <li id="definition">"definition"</li>
+  </ul>
+</div> 
+    <footer class="footer relative bottom  inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800"
       alt="long white footer with publishing info and data as well as a privacy policy">
       <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@<a href="" class="hover:underline"
@@ -70,7 +85,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    
+    <script src="assets/js/script2.js"></script>
+
 </body>
 
 </html>

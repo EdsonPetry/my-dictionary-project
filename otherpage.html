@@ -40,26 +40,25 @@
           </div>
       </form>
     <!-- defintion generates here on "enter" -->
-      <div class="inline-flex w-full py-2  justify-between">
+      <div id="definition-page" class="inline-flex w-full py-2  justify-between">
         <form id="word-output"
         class="text-m italic flex-wrap inline-flex w-full  justify-between font-semibold text-gray-900 dark:text-white">
-          <p class="flex-row text-white justify-self-start underline">"word here"</p>
-          <img class="justify-self-end text-white flex-row h-auto max-w-full" src="/docs/images/examples/image-1@2x.jpg"
+          <p class="flex-row text-white justify-self-start underline hidden">"word here"</p>
+          <img class="justify-self-end text-white flex-row h-auto max-w-full hidden" src="/docs/images/examples/image-1@2x.jpg"
           alt="image description">
 
         </form>
         <div> 
 
         </div>
-    </main>
+  </main id>
 
     <ul class="break-before-auto flex-column space-y-1 align- text-gray-700 text-xsmall" bottom-text>
-      <li>"noun/verb/adjective etc..."</li>
-      <li>"definition"</li>
-      <li>"quote from"</li>
+      <li id="part-of-speech">"noun/verb/adjective etc..."</li>
+      <li id="definition">"definition"</li>
     </ul>
   </div>
-  <footer class="footer absolute inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+  <footer class="footer relative inset-x-0 bottom-0 bg-white rounded-lg shadow m-4 dark:bg-gray-800">
     <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href=""
           class="hover:underline">MyDictionary"</a>. All Rights Reserved.
@@ -72,6 +71,12 @@
           <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
         </li>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/script2.js"></script>
 </body>
 </html>
