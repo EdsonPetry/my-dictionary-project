@@ -1,20 +1,20 @@
-//TODO listen for submit on the search bar DONE
-// When I click the search bar, I want to type a word into it
-// TODO store search bar class into a variable DONE
-// TODO set a searchWord variable to an empty string
-// TODO create an event listener for the a click on our "search" button and run searchWord DONE
-/* !! searchWord will grab the searched words' definition, antonyms and synonyms along with an example 
-        of it being used in a sentence from the dictionary API */
-// searchWord will also get an image using our searchWord variable as the keyword and display the image onto the page
+Script2.js
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const word = urlParams.get('word')
+console.log(word);
 
 let submitBtn = document.querySelector("#word-submit");
 let inputBar = $("#input-bar");
 let homePage = document.querySelector(".home-page");
 let defPage = document.querySelector(".definition-page");
 let inputWord = document.getElementById("default-search");
+let wordHere = $('#word-here');
+let partOfSpeech = $('#part-of-speech');
+let definition = $('#definition');
 // Attempting to take the users input word and store into local storage
 // Then pull word from local storage and assign it to a variable to get the data from both image generation api and definition
-let word = "" // get actual value from form
 // set value of word to whatever the user inputs into the search bar
 inputBar.on("submit", function (event) {
   event.preventDefault();
@@ -25,9 +25,10 @@ inputBar.on("submit", function (event) {
 // function addWordToLocal(wordToAdd) {}
 
 // function retrieveWordFromLocal() {}
+searchWord(word);
 
 function searchWord(word) { //MOST IMPORTANT FUNCTION 
-  window.location.href = "./otherpage.html?word=" + word;
+//   window.location.href = "./otherpage.html?word=" + word;
   getDefiniton(word);
   getImage(word);
 }
@@ -37,7 +38,11 @@ function getDefiniton(word) {
   let wordUrl = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
   $.get(wordUrl + word).then(function (data) {
-    console.log(data[0].word);
+    console.log(data);
+    wordHere.text(word);
+    definition.text(data[0].meanings[0].definitions[0].definition);
+    partOfSpeech.text(data[0].meanings[0].partOfSpeech);
+
   });
 }
 
@@ -55,6 +60,3 @@ function getImage(word) {
             `);
   });
 };
-
-// WHEN everything is done and working then work on the local storage aspect of the app
-// Store searched words into local storage and definitons
